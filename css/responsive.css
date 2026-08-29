@@ -1,0 +1,52 @@
+@media(max-width:768px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-content,
+   .hero-image img{
+    width:340px;
+    height:340px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    box-shadow:
+        0 0 25px #38bdf8,
+        0 0 60px rgba(56,189,248,.5);
+
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+   .hero-content h1{
+
+font-size:72px;
+
+line-height:1.1;
+
+margin:15px 0;
+
+font-weight:700;
+
+}
+    .nav-links {
+        display: none;
+    }
+}
