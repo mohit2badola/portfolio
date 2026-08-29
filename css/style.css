@@ -659,3 +659,11 @@ Particle Background
     transform: translateY(0);
 
 }
+
+
+html,
+body{
+
+    overflow-x:hidden;
+
+}

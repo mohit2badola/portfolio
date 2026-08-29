@@ -90,6 +90,10 @@ form.addEventListener("submit", function (e) {
 // NAVBAR SCROLL EFFECT
 // ============================
 
+// ============================
+// NAVBAR SCROLL EFFECT
+// ============================
+
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
@@ -106,12 +110,13 @@ window.addEventListener("scroll", () => {
 
 });
 
+
 // ============================
 // ACTIVE NAV LINK
 // ============================
 
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-links a");
+const navItems = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
 
@@ -129,7 +134,7 @@ window.addEventListener("scroll", () => {
 
     });
 
-    navLinks.forEach(link => {
+    navItems.forEach(link => {
 
         link.classList.remove("active");
 
@@ -138,6 +143,32 @@ window.addEventListener("scroll", () => {
             link.classList.add("active");
 
         }
+
+    });
+
+});
+
+
+// ============================
+// MOBILE MENU
+// ============================
+
+const menuBtn = document.querySelector(".menu-btn");
+const navMenu = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+
+    console.log("Menu clicked");
+
+    navMenu.classList.toggle("active");
+
+});
+
+navItems.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navMenu.classList.remove("active");
 
     });
 
