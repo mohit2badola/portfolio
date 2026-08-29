@@ -173,3 +173,11 @@ navItems.forEach(link => {
     });
 
 });
+
+const flipCard = document.getElementById("flipCard");
+
+flipCard.addEventListener("click", () => {
+
+    flipCard.classList.toggle("flipped");
+
+});
